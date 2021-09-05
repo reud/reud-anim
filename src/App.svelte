@@ -6,20 +6,32 @@
 
 <main>
 	<Header />
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<div class="container-fluid" >
+		<h1 class="title">
+			reud the animation
+		</h1>
+		<span style="color: #768B98; font-size: 20px">シーズン1</span>
+		<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	</div>
 </main>
 
 <style>
+	body {
+	}
 	main {
-		text-align: center;
 		padding: 1em;
 		max-width: 240px;
 		margin: 0 auto;
+		background: #0F171E;
+		width: 100vw;
+		height: 100vh;
 	}
 
+	.title {
+		margin-top: 60px;
+	}
 	h1 {
-		color: #ff3e00;
+		color: white;
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 100;
