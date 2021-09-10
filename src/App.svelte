@@ -1,7 +1,11 @@
 <script lang="ts">
+	import Share from "svelte-bootstrap-icons/lib/Share"
 	import Header from "./components/Header.svelte";
 	import StarRating from "./components/StarRating.svelte";
+	import Pencil from "svelte-bootstrap-icons/lib/Pencil";
+	import Lightbulb from "svelte-bootstrap-icons/lib/Lightbulb";
 	import { fade } from 'svelte/transition';
+	import TabView from "./Views/TabView.svelte";
 	export let name: string;
 </script>
 
@@ -25,13 +29,48 @@
 		<div>
 			<span  style="color: #768B98; font-size: 20px; margin-top: 120px; bottom: 20px;">出演 reud</span>
 			<br>
-			<span  style="color: #79b8f3; font-size: 50px; margin-right: 20px; bottom: 20px;">prime</span>
+			<span  style="color: #79b8f3; font-weight: 700; font-size: 50px; margin-right: 20px; bottom: 20px;">prime</span>
 			<span  style="color: white; font-weight: 700; font-size: 20px; margin-right: 20px; bottom: 20px;">シーズン1はプライム会員特典です</span>
 		</div>
+		<div class=" container-fluid">
+			<div class="row">
+				<span class="col-5" style="color: #8197a4; font-size: 16px; margin-top: 30px">このサイトはreudがCSSの練習用に作成したジョークサイトです。実際にはアニメ化されていません。</span>
+				<div class="bi-text-right container-fluid col-6" style="display: block;">
+					<button type="button" class="btn btn-link action-button">
+						<Lightbulb />
+						フィードバック
+					</button>
+					<button type="button" class="btn btn-link action-button">
+						<Pencil style="fill: white" />
+						レビューを書く
+					</button>
+					<button type="button" class="btn btn-link action-button" >
+						<Share style="fill: white"/>
+						<span>共有</span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<TabView />
 	</div>
 </main>
 
 <style>
+	a:hover {
+		color: white;
+		text-decoration: none;
+		margin-top: 15px;
+		font-size: 20px;
+	}
+
+	.action-button {
+		color: white;
+		text-decoration: none;
+		margin-top: 15px;
+		font-size: 20px;
+		float: right;
+	}
+
 	.summary-text {
 		color: white;
 		font-size: 18px;
