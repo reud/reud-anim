@@ -85,7 +85,7 @@
 		margin: 0 auto;
 		background: #0F171E;
 		width: 100vw;
-		height: 100vh;
+		height: 150vh;
 	}
 	.title {
 		margin-top: 60px;
