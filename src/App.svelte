@@ -18,7 +18,7 @@
 		<div class="d-flex">
 			<span  style="color: #768B98; font-size: 20px; margin-right: 20px">シーズン1</span>
 			<StarRating />
-			<span  style="color: #79b8f3; font-size: 20px; margin-left: 10px">(8,448)</span>
+			<span  style="color: #79b8f3; font-size: 20px; margin-left: 10px">(1)</span>
 			<span  style="color: #768B98; font-size: 14px; margin-left: 20px; margin-top: 5px;">2021</span>
 		</div>
 		<div class="summary-text">

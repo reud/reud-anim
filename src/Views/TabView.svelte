@@ -1,5 +1,7 @@
 <script lang="ts">
 import { Tabs, TabList, TabPanel, Tab } from '../components/tabs/tabs.ts';
+import DetailView from "./DetailView.svelte";
+import ReviewVIew from "./ReviewVIew.svelte";
 </script>
 
 <Tabs>
@@ -14,6 +16,8 @@ import { Tabs, TabList, TabPanel, Tab } from '../components/tabs/tabs.ts';
 
     <TabPanel>
         <h3 class="episodes">エピソード(0)</h3>
+        <span style="color: white"> TODO review view はここではないので後で消す。テストのために一時的に表示</span>
+        <ReviewVIew />
     </TabPanel>
 
     <TabPanel>
@@ -21,7 +25,8 @@ import { Tabs, TabList, TabPanel, Tab } from '../components/tabs/tabs.ts';
     </TabPanel>
 
     <TabPanel>
-        <h3 class="episodes">詳細</h3>
+        <DetailView />
+        <ReviewVIew />
     </TabPanel>
 </Tabs>
 
@@ -29,10 +34,5 @@ import { Tabs, TabList, TabPanel, Tab } from '../components/tabs/tabs.ts';
     .centering {
         display: grid;
         place-content: center;
-    }
-    .episodes {
-        color: white;
-        font-size: 20px;
-        margin-top: 20px;
     }
 </style>
