@@ -1,5 +1,6 @@
 <script>
     import StarRating from "../components/StarRating.svelte";
+    import ReviewCard from "../components/ReviewCard.svelte";
 </script>
 
 <div>
@@ -50,20 +51,43 @@
             </div>
             <div class="col-5">
                 <div class="d-flex">
-                    <span>並べ替え: </span>
-                    <select class="form-select" aria-label="Default select example" style="width: 200px; margin-left: 20px">
+                    <span style="margin-top: 7px">並べ替え: </span>
+                    <select>
                         <option selected>トップレビュー</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                        <option value="1">新しい順</option>
                     </select>
                 </div>
+                <ReviewCard />
             </div>
         </div>
     </div>
 </div>
 
 <style>
+    option {
+        background: #0F171E;
+    }
+    select {
+        width: 200px;
+        margin-left: 20px;
+        background: transparent;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+        border: none;
+        color: white;
+        margin-bottom: 10px;
+    }
+    ::selection {
+        background-color: transparent;
+
+    }
+
+    ::-moz-selection {
+        background-color: transparent;
+    }
+
     h4 {
         color: white;
     }
