@@ -21,10 +21,13 @@
 			<span  style="color: #79b8f3; font-size: 20px; margin-left: 10px">(1)</span>
 			<span  style="color: #768B98; font-size: 14px; margin-left: 20px; margin-top: 5px;">2021</span>
 		</div>
-		<div class="summary-text">
-			どこにでも普通の青年が居た。様々な人に「reud」と呼ばれる少年はどこにでもある、平穏な日々を過ごしていた。
-			ある日青年に手紙と共に一枚のお面が届く。手紙を見るとそのお面を付けて仮面舞踏会に来ないかという誘いであった。
-			日常に嫌気が指していたreudは仮面舞踏会に出席することになる。その仮面舞踏会は奇妙であった。
+		<div style="position: relative">
+			<div class="summary-text">
+				どこにでも普通の青年が居た。様々な人に「reud」と呼ばれる少年はどこにでもある、平穏な日々を過ごしていた。
+				ある日青年に手紙と共に一枚のお面が届く。手紙を見るとそのお面を付けて仮面舞踏会に来ないかという誘いであった。
+				日常に嫌気が指していたreudは仮面舞踏会に出席することになる。その仮面舞踏会は奇妙であった。
+			</div>
+			<img src="images/reud.png" alt="background" class="film-image"/>
 		</div>
 		<div>
 			<span  style="color: #768B98; font-size: 20px; margin-top: 120px; bottom: 20px;">出演 reud</span>
@@ -56,6 +59,12 @@
 </main>
 
 <style>
+	.film-image {
+		position: absolute;
+		width: 40%;
+		left: 800px;
+		bottom: -150px;
+	}
 	a:hover {
 		color: white;
 		text-decoration: none;

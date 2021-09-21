@@ -16,8 +16,6 @@ import ReviewVIew from "./ReviewVIew.svelte";
 
     <TabPanel>
         <h3 class="episodes">エピソード(0)</h3>
-        <span style="color: white"> TODO review view はここではないので後で消す。テストのために一時的に表示</span>
-        <ReviewVIew />
     </TabPanel>
 
     <TabPanel>
@@ -34,5 +32,10 @@ import ReviewVIew from "./ReviewVIew.svelte";
     .centering {
         display: grid;
         place-content: center;
+    }
+    .episodes {
+        color: white;
+        font-size: 20px;
+        margin-top: 20px;
     }
 </style>
