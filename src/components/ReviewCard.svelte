@@ -29,8 +29,8 @@
         background-color: #425265;
         color: white;
         margin-top: 5px;
-        height: 40px;
-        width: 100px;
+        height: 4vh;
+        width: 8vw;
     }
     img {
         width: 32px;
